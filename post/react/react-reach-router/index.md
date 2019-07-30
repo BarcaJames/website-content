@@ -141,7 +141,7 @@ then inside the component you can import Router again, and define its own set of
 //component PrivateArea
 <Router>
   <User path="/:userId" />
-</router>
+</Router>
 ```
 
 Any route using `/private-area/something` will be handled by the User component, and the part after the route will be sent as its `userId` prop.
@@ -153,5 +153,5 @@ To display something in the `/private-area` route now you also need to add a `/`
 <Router>
   <User path="/:userId" />
   <PrivateAreaDashboard path="/" />
-</router>
+</Router>
 ```
